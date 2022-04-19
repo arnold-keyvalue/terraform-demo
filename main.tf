@@ -9,3 +9,9 @@ module "tf-session-bucket2" {
   name   = "tf-session-bucket2"
   acl    = "private"
 }
+
+module "tf-session-bucket3" {
+  source = "./modules/s3"
+  name   = "tf-session-bucket3"
+  acl    = "private"
+}
